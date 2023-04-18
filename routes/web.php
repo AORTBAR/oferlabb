@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('bienvenida');
 });
+
+// Luego, en tu archivo de rutas web.php, puedes asociar esta ruta con el método showLoginForm del controlador LoginController de la siguiente manera:
+Route::get('/login', 'App\Http\Controllers\LoginController@muestraLoginForm')->name('bienvenida');
+
+
 
