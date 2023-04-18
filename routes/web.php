@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 // Luego, en tu archivo de rutas web.php, puedes asociar esta ruta con el método showLoginForm del controlador LoginController de la siguiente manera:
 Route::get('/login', 'App\Http\Controllers\LoginController@muestraLoginForm')->name('bienvenida');
+Route::get('/register', function () {return view('registro.blade');
+});
 
 
 
